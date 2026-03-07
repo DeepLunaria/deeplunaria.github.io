@@ -92,12 +92,12 @@ nav-constructor {
 }
 
 welcome-card-container {
-  flex: 1;
+  flex: 1.2;
   height: 100vh;
   display: flex;
   align-items: center; /* Centers vertically */
   background-color: var(--light);
-  transform: skewX(-20deg);
+  transform: skewX(-25deg);
   z-index: -10;
   margin-left: -150px;
 }
@@ -106,8 +106,8 @@ welcome-card {
   display: grid;
   margin-left: 30px;
   padding-left: 150px;
-  padding-right: 40px;
-  transform: skewX(20deg);
+  transform: skewX(25deg);
+  clip-path: polygon(var(--pad-deg) 0, 100% 0, calc(100% - var(--pad-deg)) 100%, 0 100%);
 }
 
 slash-container {
@@ -121,8 +121,12 @@ slash-container {
   font-size: 60px;
   margin-top: 15px;
   margin-bottom: 15px;
+  max-width: clamp(320px, 55vw, 65ch);
+  padding-right: clamp(1rem, 6vw, 8rem);
 }
 
 welcome-card-desc {
-  font-size: 20px;
+  font-size: 22px;
+  max-width: clamp(320px, 55vw, 65ch);
+  padding-right: clamp(1rem, 6vw, 8rem);
 }
