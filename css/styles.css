@@ -1,0 +1,128 @@
+/* INFO: Color Pallete */
+:root {
+  --background: #e7edf5;
+  --font: #23384e;
+  --desc: #425466;
+
+  --light: #ddeaff;
+  --dim: #caddff;
+  --dim-darker: #acc7ff;
+  --dim-darker-100: #7babfe;
+  --dim-darker-200: #5090ff;
+
+  --icon: #6d88b5;
+  --icon-bc: #dbe6f7;
+
+  --small-card: var(--icon-bc);
+
+  --button: #7f9fd4;
+  --button-enabled: #5f84c4;
+
+  --desktop-navbar: #d6e2f0;
+  --desktop-navicon: #9db2d8;
+
+  --pad-val: 25px;
+  --pad-deg: calc(var(--pad-val) + 10px);
+}
+
+* {
+  caret-color: transparent;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: var(--font);
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  color: var(--font);
+  background-color: var(--background);
+  font-family: "Google";
+}
+
+nav-constructor {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.nav-item {
+  font-size: 18px;
+  padding: var(--pad-val);
+  padding-left: calc(var(--pad-deg) + 20px);
+  padding-right: calc(var(--pad-deg) + 20px);
+  cursor: pointer;
+  background-color: var(--dim);
+  transition: background-color 0.3s ease-in-out;
+  clip-path: polygon(var(--pad-deg) 0, 100% 0, calc(100% - var(--pad-deg)) 100%, 0 100%);
+  margin-left: -40px;
+}
+
+.nav-item-first {
+  font-size: 18px;
+  padding: var(--pad-val);
+  padding-left: var(--pad-deg);
+  padding-right: calc(var(--pad-deg) + 20px);
+  background-color: var(--dim-darker-100);
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--pad-deg)) 100%, 0 100%);
+}
+
+.nav-item-first:hover {
+  background-color: var(--dim-darker-200);
+}
+
+.nav-item:hover {
+  font-weight: bold;
+  background-color: var(--dim-darker);
+}
+
+#home {
+  display: flex;
+}
+
+#about_us {
+  display: flex;
+}
+
+welcome-card-container {
+  flex: 1;
+  height: 100vh;
+  display: flex;
+  align-items: center; /* Centers vertically */
+  background-color: var(--light);
+  transform: skewX(-20deg);
+  z-index: -10;
+  margin-left: -150px;
+}
+
+welcome-card {
+  display: grid;
+  margin-left: 30px;
+  padding-left: 150px;
+  padding-right: 40px;
+  transform: skewX(20deg);
+}
+
+slash-container {
+  flex: 1;
+  display: flex;
+  overflow-x: hidden;
+  padding-left: 300px;
+}
+
+.welcome-card-title {
+  font-size: 60px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+welcome-card-desc {
+  font-size: 20px;
+}

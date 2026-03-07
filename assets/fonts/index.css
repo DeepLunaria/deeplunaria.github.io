@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Google";
+  src: url(./google.ttf);
+}
+
+@font-face {
+  font-family: "VGA 437";
+  src: url(./vga_437.ttf);
+}

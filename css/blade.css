@@ -1,0 +1,101 @@
+:root {
+  --pastel-orange-blade: #caddff;
+  --pastel-purple-blade: #b6d1ff;
+  --pastel-green-blade:  #9bc0ff;
+  --pastel-red-blade:    #7babfe;
+  --pastel-yellow-blade: #649dff;
+  --pastel-blue-blade:   #94EBF2;
+}
+
+slash-blade {
+  display: block;
+  width: 300px;
+  height: calc(100vh);
+  transform: skewX(-20deg);
+  opacity: 0.7;
+}
+
+.sb-color-orange {
+  background-color: var(--pastel-orange-blade);
+  animation: move-right-to-left 4.1s linear infinite;
+}
+
+.sb-color-purple {
+  background-color: var(--pastel-purple-blade);
+  animation: move-left-to-right 5.2s linear infinite;
+}
+
+.sb-color-green {
+  background-color: var(--pastel-green-blade);
+  animation: move-right-to-left 6.3s linear infinite;
+}
+
+.sb-color-red {
+  background-color: var(--pastel-red-blade);
+  animation: move-right-to-left 4.4s linear infinite;
+}
+
+.sb-color-yellow {
+  background-color: var(--pastel-yellow-blade);
+  animation: move-left-to-right 5.5s linear infinite;
+}
+
+.sb-color-blue {
+  background-color: var(--pastel-blue-blade);
+  animation: move-right-to-left 4.6s linear infinite;
+}
+
+.ex-sb-color-orange {
+  background-color: var(--pastel-orange-blade);
+  animation: move-right-to-left 4.6s linear infinite;
+}
+
+.ex-sb-color-purple {
+  background-color: var(--pastel-purple-blade);
+  animation: move-left-to-right 5.5s linear infinite;
+}
+
+.ex-sb-color-green {
+  background-color: var(--pastel-green-blade);
+  animation: move-right-to-left 6.4s linear infinite;
+}
+
+.ex-ex-sb-color-red {
+  background-color: var(--pastel-red-blade);
+  animation: move-right-to-left 4.3s linear infinite;
+}
+
+.ex-sb-color-yellow {
+  background-color: var(--pastel-yellow-blade);
+  animation: move-left-to-right 5.2s linear infinite;
+}
+
+.ex-sb-color-blue {
+  background-color: var(--pastel-blue-blade);
+  animation: move-right-to-left 4.1s linear infinite;
+}
+
+@keyframes move-right-to-left {
+  0% {
+    transform: translateX(50%) skewX(-20deg);
+  }
+  50% {
+    transform: translateX(-50%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(50%) skewX(-20deg);
+  }
+}
+
+
+@keyframes move-left-to-right {
+  0% {
+    transform: translateX(-50%) skewX(-20deg);
+  }
+  50% {
+    transform: translateX(50%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(-50%) skewX(-20deg);
+  }
+}
