@@ -1,0 +1,29 @@
+github-icon {
+  background-image: url(./github.svg);
+  display: block;
+  width: 24px;
+  height: 24px;
+  z-index: 10;
+  scale: 1.2;
+  margin: 10px;
+}
+
+telegram-icon {
+  background-image: url(./telegram.svg);
+  display: block;
+  width: 24px;
+  height: 24px;
+  z-index: 10;
+  scale: 1.2;
+  margin: 10px;
+}
+
+discord-icon {
+  background-image: url(./discord.svg);
+  display: block;
+  width: 24px;
+  height: 24px;
+  z-index: 10;
+  scale: 1.2;
+  margin: 10px;
+}
