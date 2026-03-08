@@ -17,85 +17,85 @@ slash-blade {
 
 .sb-color-orange {
   background-color: var(--pastel-orange-blade);
-  animation: move-right-to-left 4.1s linear infinite;
+  animation: move-right-to-left 8.1s ease-in-out infinite;
 }
 
 .sb-color-purple {
   background-color: var(--pastel-purple-blade);
-  animation: move-left-to-right 5.2s linear infinite;
+  animation: move-left-to-right 7.2s ease-in-out infinite;
 }
 
 .sb-color-green {
   background-color: var(--pastel-green-blade);
-  animation: move-right-to-left 6.3s linear infinite;
+  animation: move-right-to-left 9.3s ease-in-out infinite;
 }
 
 .sb-color-red {
   background-color: var(--pastel-red-blade);
-  animation: move-right-to-left 4.4s linear infinite;
+  animation: move-right-to-left 6.4s ease-in-out infinite;
 }
 
 .sb-color-yellow {
   background-color: var(--pastel-yellow-blade);
-  animation: move-left-to-right 5.5s linear infinite;
+  animation: move-left-to-right 8.5s ease-in-out infinite;
 }
 
 .sb-color-blue {
   background-color: var(--pastel-blue-blade);
-  animation: move-right-to-left 4.6s linear infinite;
+  animation: move-right-to-left 10.6s ease-in-out infinite;
 }
 
 .ex-sb-color-orange {
   background-color: var(--pastel-orange-blade);
-  animation: move-right-to-left 4.6s linear infinite;
+  animation: move-right-to-left 7.6s ease-in-out infinite;
 }
 
 .ex-sb-color-purple {
   background-color: var(--pastel-purple-blade);
-  animation: move-left-to-right 5.5s linear infinite;
+  animation: move-left-to-right 8.5s ease-in-out infinite;
 }
 
 .ex-sb-color-green {
   background-color: var(--pastel-green-blade);
-  animation: move-right-to-left 6.4s linear infinite;
+  animation: move-right-to-left 6.8s ease-in-out infinite;
 }
 
 .ex-ex-sb-color-red {
   background-color: var(--pastel-red-blade);
-  animation: move-right-to-left 4.3s linear infinite;
+  animation: move-left-to-right 7.3s ease-in-out infinite;
 }
 
 .ex-sb-color-yellow {
   background-color: var(--pastel-yellow-blade);
-  animation: move-left-to-right 5.2s linear infinite;
+  animation: move-right-to-left 8.2s ease-in-out infinite;
 }
 
 .ex-sb-color-blue {
   background-color: var(--pastel-blue-blade);
-  animation: move-right-to-left 4.1s linear infinite;
+  animation: move-left-to-right 9.1s ease-in-out infinite;
 }
 
 @keyframes move-right-to-left {
   0% {
-    transform: translateX(50%) skewX(-20deg);
+    transform: translateX(40%) skewX(-20deg);
   }
   50% {
-    transform: translateX(-50%) skewX(-20deg);
+    transform: translateX(-40%) skewX(-20deg);
   }
   100% {
-    transform: translateX(50%) skewX(-20deg);
+    transform: translateX(40%) skewX(-20deg);
   }
 }
 
 
 @keyframes move-left-to-right {
   0% {
-    transform: translateX(-50%) skewX(-20deg);
+    transform: translateX(-40%) skewX(-20deg);
   }
   50% {
-    transform: translateX(50%) skewX(-20deg);
+    transform: translateX(40%) skewX(-20deg);
   }
   100% {
-    transform: translateX(-50%) skewX(-20deg);
+    transform: translateX(-40%) skewX(-20deg);
   }
 }
