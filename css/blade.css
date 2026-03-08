@@ -9,10 +9,10 @@
 
 slash-blade {
   display: block;
-  width: 300px;
+  width: 6em;
   height: calc(100vh);
-  transform: skewX(-25deg);
   opacity: 0.7;
+  z-index: 30;
 }
 
 .sb-color-orange {
@@ -75,27 +75,44 @@ slash-blade {
   animation: move-left-to-right 9.1s ease-in-out infinite;
 }
 
-@keyframes move-right-to-left {
+.sb-first {
+  animation: move-to-left 8.1s ease-in-out infinite;
+}
+
+@keyframes move-to-left {
   0% {
-    transform: translateX(40%) skewX(-20deg);
+    transform: translateX(0%);
   }
   50% {
-    transform: translateX(-40%) skewX(-20deg);
+    transform: translateX(40%);
   }
   100% {
-    transform: translateX(40%) skewX(-20deg);
+    transform: translateX(0%);
+  }
+}
+
+
+@keyframes move-right-to-left {
+  0% {
+    transform: translateX(40%);
+  }
+  50% {
+    transform: translateX(-40%);
+  }
+  100% {
+    transform: translateX(40%);
   }
 }
 
 
 @keyframes move-left-to-right {
   0% {
-    transform: translateX(-40%) skewX(-20deg);
+    transform: translateX(-40%);
   }
   50% {
-    transform: translateX(40%) skewX(-20deg);
+    transform: translateX(40%);
   }
   100% {
-    transform: translateX(-40%) skewX(-20deg);
+    transform: translateX(-40%);
   }
 }

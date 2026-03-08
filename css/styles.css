@@ -49,6 +49,7 @@ nav-constructor {
   align-items: center;
   position: fixed;
   top: 0;
+  z-index: 10;
 }
 
 .nav-item {
@@ -85,6 +86,7 @@ nav-constructor {
 
 #home {
   display: flex;
+  overflow: hidden;
 }
 
 #about_us {
@@ -92,33 +94,33 @@ nav-constructor {
 }
 
 welcome-card-container {
-  flex: 1.2;
+  flex: 1;
   height: 100vh;
   display: flex;
   align-items: center; /* Centers vertically */
   background-color: var(--light);
-  transform: skewX(-25deg);
   z-index: -10;
-  margin-left: -150px;
+  transform: skewX(-25deg);
+  margin-left: -11vw;
 }
 
 welcome-card {
   display: grid;
-  margin-left: 30px;
-  padding-left: 150px;
-  transform: skewX(25deg);
-  clip-path: polygon(var(--pad-deg) 0, 100% 0, calc(100% - var(--pad-deg)) 100%, 0 100%);
+  margin-left: 17rem;
+  transform: skew(25deg);
 }
 
 slash-container {
   flex: 1;
   display: flex;
   overflow-x: hidden;
-  padding-left: 300px;
+  margin-left: 40px;
+  transform: skewX(-25deg);
+  z-index: -10;
 }
 
 .welcome-card-title {
-  font-size: 60px;
+  font-size: 3.5em;
   margin-top: 15px;
   margin-bottom: 15px;
   max-width: clamp(320px, 55vw, 65ch);
@@ -143,4 +145,57 @@ footer {
 social-media-list {
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 1400px) {
+  welcome-card {
+    margin-left: 12rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  welcome-card {
+    margin-left: 10rem;
+  }
+
+  .welcome-card-title {
+    font-size: 2.5em;
+  }
+
+  welcome-card-desc {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #home {
+    display:block;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  welcome-card-container {
+    background-color: initial;
+    z-index: 5;
+    transform: skewX(0deg);
+    margin: 0;
+    width: 100%;
+  }
+
+  welcome-card {
+    display: inline;
+    margin: 0;
+    transform: skewX(0deg);
+    align-items: center; /* Centers vertically */
+    background-color: var(--light);
+    padding: 30px;
+  }
+
+  slash-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -30;
+  }
 }
