@@ -7,6 +7,7 @@
   --light: #ddeaff;
   --dim: #caddff;
   --dim-darker: #acc7ff;
+  --dim-darker-50: #9abfff;
   --dim-darker-100: #7babfe;
   --dim-darker-200: #5090ff;
 
@@ -87,10 +88,6 @@ nav-constructor {
 #home {
   display: flex;
   overflow: hidden;
-}
-
-#about_us {
-  display: flex;
 }
 
 welcome-card-container {
@@ -197,5 +194,18 @@ social-media-list {
     left: 0;
     right: 0;
     z-index: -30;
+    margin-left: 0;
+    scale: 2;
+  }
+
+  footer {
+    background-color: var(--dim-darker);
+    padding: 2em;
+    font-size: 18px;
+    display: grid;
+  }
+
+  nav-constructor {
+    display: none;
   }
 }

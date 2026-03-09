@@ -27,3 +27,12 @@ discord-icon {
   scale: 1.2;
   margin: 10px;
 }
+
+menu-icon {
+  background-image: url(./menu_button.svg);
+  display: block;
+  width: 24px;
+  height: 24px;
+  z-index: 10;
+  scale: 1.5;
+}

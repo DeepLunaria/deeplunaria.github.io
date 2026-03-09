@@ -1,7 +1,6 @@
 const rootCss = document.querySelector(':root')
-
 const rand = Math.random()
-
+console.log(rand)
 if (Math.round(rand * 10) / 10 == 0.1) {
   rootCss.style.setProperty('--pastel-orange-blade', '#F2CB9D')
   rootCss.style.setProperty('--pastel-purple-blade', '#D5B2D8')
