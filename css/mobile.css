@@ -24,13 +24,12 @@ mobile-navbar {
   margin-left: -40px;
 }
 
-#mobile-menu-button:hover {
+#mobile-menu-button:active {
   background-color: var(--dim-darker-100);
 }
 
 #mobile-menu-screen {
   opacity: 0;
-  visibility: hidden;
   pointer-events: none;
   position: fixed;
   top: 72px;
@@ -39,7 +38,7 @@ mobile-navbar {
   bottom: 0;
   z-index: -100;
   background-color: var(--dim);
-  transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s;
+  transition: opacity 0.5s ease-in-out;
   display: grid;
   align-content: start;
   justify-content: center;
@@ -50,10 +49,8 @@ mobile-navbar {
 
 #mobile-menu-screen.show {
   opacity: 1;
-  visibility: visible;
   pointer-events: auto;
   z-index: 100;
-  transition: opacity 0.5s ease-in-out;
 }
 
 .mobile-link {

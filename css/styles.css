@@ -4,8 +4,10 @@
   --font: #23384e;
   --desc: #425466;
 
+  --lighter: #d9e9ff;
   --light: #ddeaff;
   --dim: #caddff;
+  --dim-dark: #c4d8ff;
   --dim-darker: #acc7ff;
   --dim-darker-50: #9abfff;
   --dim-darker-100: #7babfe;
@@ -44,6 +46,8 @@ body {
   background-color: var(--background);
   font-family: "Google";
 }
+
+/* INFO: Navigation Bar */
 
 nav-constructor {
   display: flex;
@@ -85,6 +89,7 @@ nav-constructor {
   background-color: var(--dim-darker);
 }
 
+/* INFO: Home Page */
 #home {
   display: flex;
   overflow: hidden;
@@ -130,6 +135,68 @@ welcome-card-desc {
   padding-right: clamp(1rem, 6vw, 8rem);
 }
 
+/* INFO: About us page */
+#philosophy {
+  background-color: var(--dim-darker);
+}
+
+.au-header {
+  margin: 0;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 40px;
+}
+
+au-card-list {
+  background-color: var(--dim-darker);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px;
+  grid-auto-rows: min-content; /* Row height fits content */
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-bottom: 100px;
+}
+
+au-card {
+  display: grid;
+  background-color: var(--dim-dark);
+  align-content: start;
+  margin: 25px;
+  padding: 50px;
+  padding-right: clamp(1rem, 6vw, 8rem);
+  clip-path: polygon(var(--pad-deg) 0, 100% 0, calc(100% - var(--pad-deg)) 100%, 0 100%);
+}
+
+au-card-header {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+au-card-header.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+au-card-content {
+  font-size: 18px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+au-card-content.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* INFO: Footer */
 footer {
   background-color: var(--dim-darker);
   padding: 2em;
@@ -144,6 +211,15 @@ social-media-list {
   align-items: center;
 }
 
+/* INFO: Projects */
+.pj-header {
+  margin: 0;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 40px;
+}
+
+/* INFO: Responsive Design Code */
 @media (max-width: 1400px) {
   welcome-card {
     margin-left: 12rem;
@@ -169,6 +245,12 @@ social-media-list {
     display:block;
     overflow: hidden;
     width: 100%;
+  }
+
+  au-card-list {
+    grid-template-columns: 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   welcome-card-container {

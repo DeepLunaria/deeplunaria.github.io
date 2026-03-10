@@ -28,11 +28,12 @@
     <link rel="stylesheet" href="css/blade.css">
     <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="assets/3rdparty/icons/index.css">
+    <!-- Scripts -->
     <script src="js/preloader.js" type="module"></script>
     <script src="js/mobile-navbar.js" type="module"></script>
+    <script src="js/observer.js" type="module"></script>
   </head>
   <body>
-
     <div id="mobile-menu-screen">
       <a class="mobile-link" href="/blog">Blog</a>
       <a class="mobile-link" href="/projects">Projects</a>
@@ -88,6 +89,59 @@
         <slash-blade class="sb-color-blue"></slash-blade>
         <slash-blade class="ex-sb-color-green"></slash-blade>
       </slash-container>
+    </div>
+
+    <div id="philosophy">
+      <h2 class="au-header">Our Philosophy</h2>
+      <au-card-list>
+        <au-card>
+          <au-card-header>Imagination</au-card-header>
+          <au-card-content>Imagination is the origin of every creation.
+            Before software becomes architecture, systems, or infrastructure,
+            it begins as an idea.
+            <br>
+            DeepLunaria exists to explore those ideas and transform them into 
+            real, working technology through thoughtful engineering and experimentation.
+          </au-card-content>
+        </au-card>
+
+        <au-card>
+          <au-card-header>Creative Engineering</au-card-header>
+          <au-card-content>
+            Creativity alone is not enough.
+            <br>
+            Ideas must be shaped with careful design, 
+            clean architecture, and disciplined engineering.
+            <br>
+            Our projects combine imagination with practical implementation to produce
+            systems that are understandable, maintainable, and reliable.
+          </au-card-content>
+        </au-card>
+
+        <au-card>
+          <au-card-header>Stability</au-card-header>
+          <au-card-content>
+            We believe software should survive edge cases, 
+            respect API contracts, and fail safely.
+            <br>
+            Instead of chasing short-term trends, we focus on long-term maintainability, 
+            predictable behavior, and stable systems that continue working across versions and environments.
+          </au-card-content>
+        </au-card>
+
+        <au-card>
+          <au-card-header>Independent Foundation</au-card-header>
+          <au-card-content>
+            DeepLunaria is a small independent engineering foundation.
+            <br>
+            We build projects because they are meaningful to create, 
+            not because they follow industry trends. 
+            <br>
+            Our work is driven by curiosity, careful engineering, 
+            and a commitment to building software meant to last.
+          </au-card-content>
+        </au-card>
+      </au-card-list>
     </div>
 
     <footer>
