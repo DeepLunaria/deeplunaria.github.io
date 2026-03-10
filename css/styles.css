@@ -6,6 +6,7 @@
 
   --lighter: #d9e9ff;
   --light: #ddeaff;
+  --predim: #dce9ff;
   --dim: #caddff;
   --dim-dark: #c4d8ff;
   --dim-darker: #acc7ff;
@@ -48,7 +49,6 @@ body {
 }
 
 /* INFO: Navigation Bar */
-
 nav-constructor {
   display: flex;
   align-items: center;
@@ -159,13 +159,15 @@ au-card-list {
 }
 
 au-card {
+  --au-card-pad-deg: calc(var(--pad-deg));
   display: grid;
   background-color: var(--dim-dark);
   align-content: start;
   margin: 25px;
   padding: 50px;
-  padding-right: clamp(1rem, 6vw, 8rem);
-  clip-path: polygon(var(--pad-deg) 0, 100% 0, calc(100% - var(--pad-deg)) 100%, 0 100%);
+  padding-left: 70px;
+  padding-right: clamp(4rem, 6vw, 8rem);
+  clip-path: polygon(var(--au-card-pad-deg) 0, 100% 0, calc(100% - var(--au-card-pad-deg)) 100%, 0 100%);
 }
 
 au-card-header {
@@ -195,6 +197,55 @@ au-card-content.active {
   transform: translateY(0);
 }
 
+/* INFO: Projects */
+#projects {
+  padding-left: 15vw;
+  padding-right: 15vw;
+  background-color: var(--light);
+  padding-bottom: 100px;
+}
+
+.pj-header {
+  margin: 0;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 40px;
+}
+
+#pj-card-list {
+  display: grid;
+  margin: 30px;
+}
+
+.pj-card {
+  display: flex;
+  background-color: var(--dim);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  clip-path: polygon(var(--pad-deg) 0, 100% 0, calc(100% - var(--pad-deg)) 100%, 0 100%);
+}
+
+pj-card-blade {
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  clip-path: polygon(var(--pad-deg) 0, 100% 0, calc(100% - var(--pad-deg)) 100%, 0 100%);
+}
+
+pj-card-content {
+  display: grid;
+  padding: 30px;
+}
+
+pj-card-content-header {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+pj-card-content-desc {
+  font-size: 20px;
+}
+
 
 /* INFO: Footer */
 footer {
@@ -209,14 +260,6 @@ footer {
 social-media-list {
   display: flex;
   align-items: center;
-}
-
-/* INFO: Projects */
-.pj-header {
-  margin: 0;
-  text-align: center;
-  padding-top: 40px;
-  font-size: 40px;
 }
 
 /* INFO: Responsive Design Code */
@@ -280,6 +323,11 @@ social-media-list {
     scale: 2;
   }
 
+  #projects {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   footer {
     background-color: var(--dim-darker);
     padding: 2em;
@@ -289,5 +337,17 @@ social-media-list {
 
   nav-constructor {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  #pj-card-list {
+    margin: 0;
+  }
+
+  au-card-list {
+    grid-template-columns: 1fr;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
