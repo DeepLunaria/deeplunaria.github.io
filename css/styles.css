@@ -240,10 +240,26 @@ pj-card-content {
 pj-card-content-header {
   font-weight: bold;
   font-size: 25px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+pj-card-content-header.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 pj-card-content-desc {
   font-size: 20px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+pj-card-content-desc.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 
