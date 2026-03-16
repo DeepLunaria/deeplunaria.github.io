@@ -14,14 +14,14 @@
   font-size: 60px;
 }
 
-#post-card-list {
+#pj-card-list {
   display: grid;
   margin: 30px;
   margin-left: 20vw;
   margin-right: 20vw;
 }
 
-.post-card {
+.pj-card {
   display: flex;
   background-color: var(--dim);
   margin-top: 25px;
@@ -30,11 +30,11 @@
   transition: filter 0.5s ease;
 }
 
-.post-card:hover {
+.pj-card:hover {
   filter: contrast(110%);
 }
 
-post-card-blade {
+pj-card-blade {
   padding: 30px;
   padding-left: 50px;
   padding-right: 50px;
@@ -42,12 +42,12 @@ post-card-blade {
   clip-path: polygon(var(--pad-degree) 0, 100% 0, calc(100% - var(--pad-degree)) 100%, 0 100%);
 }
 
-post-card-content {
+pj-card-content {
   display: grid;
   padding: 30px;
 }
 
-post-card-content-header {
+pj-card-content-header {
   font-weight: bold;
   font-size: 25px;
   opacity: 0;
@@ -55,24 +55,24 @@ post-card-content-header {
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-post-card-content-header.active {
+pj-card-content-header.active {
   opacity: 1;
   transform: translateY(0);
 }
 
-post-card-content-desc {
+pj-card-content-desc {
   font-size: 20px;
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-post-card-content-desc.active {
+pj-card-content-desc.active {
   opacity: 1;
   transform: translateY(0);
 }
 
-post-card-content-time {
+pj-card-content-time {
   margin-top: 10px;
   font-size: 15px;
   opacity: 0;
@@ -80,7 +80,7 @@ post-card-content-time {
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-post-card-content-time.active {
+pj-card-content-time.active {
   opacity: 1;
   transform: translateY(0);
 }
@@ -91,7 +91,7 @@ post-card-content-time.active {
     padding-right: 20px;
   }
 
-  #post-card-list {
+  #pj-card-list {
     margin-left: 20px;
     margin-right: 20px;
   }

@@ -13,14 +13,14 @@ mobile-navbar {
 #mobile-menu-button {
   font-size: 18px;
   height: 100%;
-  padding: var(--pad-val);
-  padding-top: calc(var(--pad-val) - 2px);
-  padding-left: calc(var(--pad-deg) + 20px);
-  padding-right: calc(var(--pad-deg) + 20px);
+  padding: var(--clip-value);
+  padding-top: calc(var(--clip-value) - 2px);
+  padding-left: calc(var(--pad-degree) + 20px);
+  padding-right: calc(var(--pad-degree) + 20px);
   cursor: pointer;
   background-color: var(--dim-darker);
   transition: background-color 0.3s ease-in-out;
-  clip-path: polygon(var(--pad-deg) 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(var(--pad-degree) 0, 100% 0, 100% 100%, 0 100%);
   margin-left: -40px;
 }
 
@@ -63,7 +63,7 @@ mobile-navbar {
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: var(--dim-darker-50);
-  clip-path: polygon(var(--pad-deg) 0, 100% 0, calc(100% - var(--pad-deg)) 100%, 0 100%);
+  clip-path: polygon(var(--pad-degree) 0, 100% 0, calc(100% - var(--pad-degree)) 100%, 0 100%);
 }
 
 @media (min-width: 1000px) {

@@ -68,7 +68,7 @@ au-card-list {
 }
 
 au-card {
-  --au-card-pad-deg: calc(var(--pad-deg));
+  --au-card-pad-deg: calc(var(--pad-degree));
   display: grid;
   background-color: var(--dim-dark);
   align-content: start;
@@ -131,14 +131,14 @@ au-card-content.active {
   background-color: var(--dim);
   margin-top: 25px;
   margin-bottom: 25px;
-  clip-path: polygon(var(--pad-deg) 0, 100% 0, calc(100% - var(--pad-deg)) 100%, 0 100%);
+  clip-path: polygon(var(--pad-degree) 0, 100% 0, calc(100% - var(--pad-degree)) 100%, 0 100%);
 }
 
 pj-card-blade {
   padding: 30px;
   padding-left: 50px;
   padding-right: 50px;
-  clip-path: polygon(var(--pad-deg) 0, 100% 0, calc(100% - var(--pad-deg)) 100%, 0 100%);
+  clip-path: polygon(var(--pad-degree) 0, 100% 0, calc(100% - var(--pad-degree)) 100%, 0 100%);
 }
 
 pj-card-content {
@@ -169,6 +169,23 @@ pj-card-content-desc {
 pj-card-content-desc.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+pj-see-more-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pj-see-more-button {
+  --post-button-clip: 15px;
+  background-color: var(--dim-darker);
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 20px;
+  clip-path: polygon(var(--post-button-clip) 0, 100% 0, calc(100% - var(--post-button-clip)) 100%, 0 100%);
 }
 
 /* INFO: Responsive Design Code */

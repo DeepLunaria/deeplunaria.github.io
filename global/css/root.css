@@ -18,8 +18,8 @@
   --link-hover: #6a9af0;
   --link-active: #4c79c7;
 
-  --pad-val: 25px;
-  --pad-deg: calc(var(--pad-val) + 10px);
+  --clip-value: 25px;
+  --pad-degree: calc(var(--clip-value) + 10px);
 }
 
 * {

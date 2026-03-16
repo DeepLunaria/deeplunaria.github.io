@@ -1,6 +1,6 @@
-(async () => {
-  const post_list = await (await fetch('posts/list.json')).json()
+import { post_list } from "../data/blog_post_list.js";
 
+(async () => {
   const post_card_list = document.getElementById("post-card-list")
 
   const observer = new IntersectionObserver((entries) => {
