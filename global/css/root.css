@@ -1,0 +1,42 @@
+/* INFO: Color Pallete */
+:root {
+  --background: #e7edf5;
+  --font: #23384e;
+
+  --lighter: #d9e9ff;
+  --light: #ddeaff;
+  --predim: #dce9ff;
+  --dim: #caddff;
+  --dim-dark: #c4d8ff;
+  --dim-darker: #acc7ff;
+  --dim-darker-50: #9abfff;
+  --dim-darker-100: #7babfe;
+  --dim-darker-200: #5090ff;
+
+  --link-normal: #7babfe;
+  --link-visited: #5f8ee0;
+  --link-hover: #6a9af0;
+  --link-active: #4c79c7;
+
+  --pad-val: 25px;
+  --pad-deg: calc(var(--pad-val) + 10px);
+}
+
+* {
+  caret-color: transparent;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: var(--font);
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  color: var(--font);
+  background-color: var(--background);
+  font-family: "Google";
+}

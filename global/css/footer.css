@@ -1,0 +1,23 @@
+/* INFO: Footer */
+footer {
+  background-color: var(--dim-darker);
+  padding: 2em;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+social-media-list {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  footer {
+    background-color: var(--dim-darker);
+    padding: 2em;
+    font-size: 18px;
+    display: grid;
+  }
+}

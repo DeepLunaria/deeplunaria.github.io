@@ -1,94 +1,3 @@
-/* INFO: Color Pallete */
-:root {
-  --background: #e7edf5;
-  --font: #23384e;
-  --desc: #425466;
-
-  --lighter: #d9e9ff;
-  --light: #ddeaff;
-  --predim: #dce9ff;
-  --dim: #caddff;
-  --dim-dark: #c4d8ff;
-  --dim-darker: #acc7ff;
-  --dim-darker-50: #9abfff;
-  --dim-darker-100: #7babfe;
-  --dim-darker-200: #5090ff;
-
-  --icon: #6d88b5;
-  --icon-bc: #dbe6f7;
-
-  --small-card: var(--icon-bc);
-
-  --button: #7f9fd4;
-  --button-enabled: #5f84c4;
-
-  --desktop-navbar: #d6e2f0;
-  --desktop-navicon: #9db2d8;
-
-  --pad-val: 25px;
-  --pad-deg: calc(var(--pad-val) + 10px);
-}
-
-* {
-  caret-color: transparent;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-  color: var(--font);
-  text-decoration: none;
-}
-
-body {
-  margin: 0;
-  color: var(--font);
-  background-color: var(--background);
-  font-family: "Google";
-}
-
-/* INFO: Navigation Bar */
-nav-constructor {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.nav-item {
-  font-size: 18px;
-  padding: var(--pad-val);
-  padding-left: calc(var(--pad-deg) + 20px);
-  padding-right: calc(var(--pad-deg) + 20px);
-  cursor: pointer;
-  background-color: var(--dim);
-  transition: background-color 0.3s ease-in-out;
-  clip-path: polygon(var(--pad-deg) 0, 100% 0, calc(100% - var(--pad-deg)) 100%, 0 100%);
-  margin-left: -40px;
-}
-
-.nav-item-first {
-  font-size: 18px;
-  padding: var(--pad-val);
-  padding-left: var(--pad-deg);
-  padding-right: calc(var(--pad-deg) + 20px);
-  background-color: var(--dim-darker-100);
-  font-weight: bold;
-  transition: background-color 0.3s ease-in-out;
-  clip-path: polygon(0 0, 100% 0, calc(100% - var(--pad-deg)) 100%, 0 100%);
-}
-
-.nav-item-first:hover {
-  background-color: var(--dim-darker-200);
-}
-
-.nav-item:hover {
-  font-weight: bold;
-  background-color: var(--dim-darker);
-}
-
 /* INFO: Home Page */
 #home {
   display: flex;
@@ -262,22 +171,6 @@ pj-card-content-desc.active {
   transform: translateY(0);
 }
 
-
-/* INFO: Footer */
-footer {
-  background-color: var(--dim-darker);
-  padding: 2em;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-social-media-list {
-  display: flex;
-  align-items: center;
-}
-
 /* INFO: Responsive Design Code */
 @media (max-width: 1400px) {
   welcome-card {
@@ -342,13 +235,6 @@ social-media-list {
   #projects {
     padding-left: 20px;
     padding-right: 20px;
-  }
-
-  footer {
-    background-color: var(--dim-darker);
-    padding: 2em;
-    font-size: 18px;
-    display: grid;
   }
 
   nav-constructor {

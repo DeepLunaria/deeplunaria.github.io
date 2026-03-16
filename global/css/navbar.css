@@ -1,0 +1,47 @@
+/* INFO: Navigation Bar */
+nav-constructor {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-item {
+  font-size: 18px;
+  padding: var(--pad-val);
+  padding-left: calc(var(--pad-deg) + 20px);
+  padding-right: calc(var(--pad-deg) + 20px);
+  cursor: pointer;
+  background-color: var(--dim);
+  transition: background-color 0.3s ease-in-out;
+  clip-path: polygon(var(--pad-deg) 0, 100% 0, calc(100% - var(--pad-deg)) 100%, 0 100%);
+  margin-left: -40px;
+}
+
+.nav-item-first {
+  font-size: 18px;
+  padding: var(--pad-val);
+  padding-left: var(--pad-deg);
+  padding-right: calc(var(--pad-deg) + 20px);
+  background-color: var(--dim-darker-100);
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--pad-deg)) 100%, 0 100%);
+}
+
+.nav-item-first:hover {
+  background-color: var(--dim-darker-200);
+}
+
+.nav-item:hover {
+  font-weight: bold;
+  background-color: var(--dim-darker);
+}
+
+/* INFO: Responsive Design Code */
+@media (max-width: 1000px) {
+  nav-constructor {
+    display: none;
+  }
+}
