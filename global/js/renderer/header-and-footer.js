@@ -5,7 +5,6 @@ const header = `
     <a class="mobile-link" href="/blog">Blog</a>
     <a class="mobile-link" href="/projects">Projects</a>
     <a class="mobile-link" href="/members">Members</a>
-    <a class="mobile-link" href="/documents">Documents</a>
     <a class="mobile-link" href="https://github.com/DeepLunaria" target="_blank">Github</a>
     <a class="mobile-link" href="https://t.me/DeepLunaria" target="_blank">Telegram</a>
     <a class="mobile-link" href="https://discord.com/invite/kwEmpMExmv" target="_blank">Discord</a>
@@ -15,7 +14,6 @@ const header = `
     <a class="nav-item" href="/blog">Blog</a>
     <a class="nav-item" href="/projects">Projects</a>
     <a class="nav-item" href="/members">Members</a>
-    <a class="nav-item" href="/documents">Documents</a>
   </nav-constructor>
   <mobile-navbar>
     <a class="nav-item-first" href="/">DeepLunaria</a>
