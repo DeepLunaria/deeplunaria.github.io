@@ -1,5 +1,6 @@
 #home {
   min-height: 100vh;
+  z-index: -50;
 }
 
 .header {
@@ -19,6 +20,7 @@
   margin: 30px;
   margin-left: 20vw;
   margin-right: 20vw;
+  z-index: -50;
 }
 
 .pj-card {
@@ -28,6 +30,7 @@
   margin-bottom: 25px;
   clip-path: polygon(var(--pad-degree) 0, 100% 0, calc(100% - var(--pad-degree)) 100%, 0 100%);
   transition: filter 0.5s ease;
+  cursor: pointer;
 }
 
 .pj-card:hover {
