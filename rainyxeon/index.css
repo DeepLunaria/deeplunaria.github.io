@@ -1,6 +1,6 @@
 #home {
   min-height: 100vh;
-  background-color: var(--dim);
+  background-color: var(--dim-dark);
 }
 
 .header {
