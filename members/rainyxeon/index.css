@@ -1,0 +1,165 @@
+#home {
+  min-height: 100vh;
+  background-color: var(--dim);
+}
+
+.header {
+  margin: 0;
+  padding-top: calc(74px + 50px);
+  background-color: var(--lighter);
+  text-align: center;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+portfolio {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 50px;
+  word-wrap: break-word;
+}
+
+ptf-s {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+ptf-pfp {
+  display: block;
+  background-image: url(/assets/deeplunaria/rainyxeon/pfp.png);
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 320px;
+  width: 320px;
+}
+
+ptf-s-main-info {
+  background-color: var(--lighter);
+  display: flex;
+  flex-direction: column;
+}
+
+ptf-s-info {
+  background-color: var(--lighter);
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+ptf-s-name {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+ptf-content {
+  flex: 3;
+  background-color: var(--lighter);
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+ptf-s-text {
+  font-size: 16px;
+}
+
+ptf-s-additional-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.ptf-s-additional-data-main-info {
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.ptf-s-link:link {
+  color: var(--link-normal);
+}
+
+.ptf-s-link:visited {
+  color: var(--link-visited);
+}
+
+.ptf-s-link:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.ptf-s-link:active {
+  color: var(--link-active);
+}
+
+ptf-content {
+  padding: 15px;
+}
+
+code {
+  background-color: var(--dim-darker);
+  padding: 2px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+  .header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  portfolio {
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  ptf-s-info {
+    padding: 10px;
+  }
+  ptf-s-main-info {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+  ptf-pfp {
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    min-width: 100px;
+    min-height: 100px;
+  }
+  .ptf-s-additional-data-main-info {
+    flex: 4;
+    padding: 0;
+    padding-left: 10px;
+  }
+
+  ptf-s-name {
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  ptf-s-text {
+    font-size: 15px;
+  }
+
+  portfolio {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
