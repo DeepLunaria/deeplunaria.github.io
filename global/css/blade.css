@@ -13,106 +13,128 @@ slash-blade {
   height: calc(100vh);
   opacity: 0.7;
   z-index: 30;
+  will-change: transform;
+  animation-timing-function: cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
 
+/* INFO: Main Blade */
 .sb-color-orange {
   background-color: var(--pastel-orange-blade);
-  animation: move-right-to-left 8.1s ease-in-out infinite;
+  animation: move-a 8.1s ease-in-out infinite;
 }
 
 .sb-color-purple {
   background-color: var(--pastel-purple-blade);
-  animation: move-left-to-right 7.2s ease-in-out infinite;
+  animation: move-b 7.2s ease-in-out infinite;
 }
 
 .sb-color-green {
   background-color: var(--pastel-green-blade);
-  animation: move-right-to-left 9.3s ease-in-out infinite;
+  animation: move-c 9.3s ease-in-out infinite;
 }
 
 .sb-color-red {
   background-color: var(--pastel-red-blade);
-  animation: move-right-to-left 6.4s ease-in-out infinite;
+  animation: move-d 6.4s ease-in-out infinite;
 }
 
 .sb-color-yellow {
   background-color: var(--pastel-yellow-blade);
-  animation: move-left-to-right 8.5s ease-in-out infinite;
+  animation: move-e 8.5s ease-in-out infinite;
 }
 
 .sb-color-blue {
   background-color: var(--pastel-blue-blade);
-  animation: move-right-to-left 10.6s ease-in-out infinite;
+  animation: move-f 10.6s ease-in-out infinite;
 }
 
+/* INFO: Extra Blade */
 .ex-sb-color-orange {
   background-color: var(--pastel-orange-blade);
-  animation: move-right-to-left 7.6s ease-in-out infinite;
+  animation: move-b 7.6s ease-in-out infinite reverse;
 }
 
 .ex-sb-color-purple {
   background-color: var(--pastel-purple-blade);
-  animation: move-left-to-right 8.5s ease-in-out infinite;
+  animation: move-c 8.5s ease-in-out infinite reverse;
 }
 
 .ex-sb-color-green {
   background-color: var(--pastel-green-blade);
-  animation: move-right-to-left 6.8s ease-in-out infinite;
+  animation: move-d 6.8s ease-in-out infinite reverse;
 }
 
 .ex-ex-sb-color-red {
   background-color: var(--pastel-red-blade);
-  animation: move-left-to-right 7.3s ease-in-out infinite;
+  animation: move-e 7.3s ease-in-out infinite reverse;
 }
 
 .ex-sb-color-yellow {
   background-color: var(--pastel-yellow-blade);
-  animation: move-right-to-left 8.2s ease-in-out infinite;
+  animation: move-f 8.2s ease-in-out infinite reverse;
 }
 
 .ex-sb-color-blue {
   background-color: var(--pastel-blue-blade);
-  animation: move-left-to-right 9.1s ease-in-out infinite;
+  animation: move-a 9.1s ease-in-out infinite reverse;
 }
 
+/* INFO: First Blade */
 .sb-first {
-  animation: move-to-left 8.1s ease-in-out infinite;
+  animation: move-a 8.1s ease-in-out infinite;
 }
 
-@keyframes move-to-left {
-  0% {
-    transform: translateX(0%);
-  }
-  50% {
-    transform: translateX(40%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
+/* INFO: Keyframes */
+@keyframes move-a {
+  0%   { transform: translateX(0%); }
+  20%  { transform: translateX(25%); }
+  38%  { transform: translateX(8%); }
+  55%  { transform: translateX(35%); }
+  73%  { transform: translateX(12%); }
+  100% { transform: translateX(0%); }
 }
 
-
-@keyframes move-right-to-left {
-  0% {
-    transform: translateX(40%);
-  }
-  50% {
-    transform: translateX(-40%);
-  }
-  100% {
-    transform: translateX(40%);
-  }
+@keyframes move-b {
+  0%   { transform: translateX(0%); }
+  18%  { transform: translateX(-20%); }
+  36%  { transform: translateX(22%); }
+  52%  { transform: translateX(-5%); }
+  70%  { transform: translateX(30%); }
+  100% { transform: translateX(0%); }
 }
 
+@keyframes move-c {
+  0%   { transform: translateX(0%); }
+  22%  { transform: translateX(28%); }
+  40%  { transform: translateX(-28%); }
+  60%  { transform: translateX(5%); }
+  78%  { transform: translateX(-35%); }
+  100% { transform: translateX(0%); }
+}
 
-@keyframes move-left-to-right {
-  0% {
-    transform: translateX(-40%);
-  }
-  50% {
-    transform: translateX(40%);
-  }
-  100% {
-    transform: translateX(-40%);
-  }
+@keyframes move-d {
+  0%   { transform: translateX(0%); }
+  25%  { transform: translateX(-18%); }
+  45%  { transform: translateX(15%); }
+  65%  { transform: translateX(-30%); }
+  85%  { transform: translateX(10%); }
+  100% { transform: translateX(0%); }
+}
+
+@keyframes move-e {
+  0%   { transform: translateX(0%); }
+  15%  { transform: translateX(20%); }
+  35%  { transform: translateX(-15%); }
+  55%  { transform: translateX(25%); }
+  75%  { transform: translateX(-10%); }
+  100% { transform: translateX(0%); }
+}
+
+@keyframes move-f {
+  0%   { transform: translateX(0%); }
+  20%  { transform: translateX(-25%); }
+  40%  { transform: translateX(28%); }
+  60%  { transform: translateX(-5%); }
+  80%  { transform: translateX(35%); }
+  100% { transform: translateX(0%); }
 }
