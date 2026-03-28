@@ -140,8 +140,8 @@ li {
 }
 
 @media (max-width: 1000px) {
-  slash-container {
-    scale: 2.5;
+  slash-blade {
+    width: 5em;
   }
   
   .header {
