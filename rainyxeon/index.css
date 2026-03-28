@@ -140,6 +140,10 @@ li {
 }
 
 @media (max-width: 1000px) {
+  slash-container {
+    scale: 2.5;
+  }
+  
   .header {
     padding-left: 20px;
     padding-right: 20px;
