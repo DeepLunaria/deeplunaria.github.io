@@ -1,22 +1,76 @@
 /* INFO: Color Pallete */
 :root {
-  --background: #e7edf5;
-  --font: #23384e;
+  /* INFO: Background Color */
+  --dxrp-bg-0:   #ffffff;
+  --dxrp-bg-50:  #f8fbff;
+  --dxrp-bg-100: #f4f8ff;
+  --dxrp-bg-150: #eef5ff;
+  --dxrp-bg-200: #e7edf5;
+  --dxrp-bg-300: #d9e9ff;
 
-  --lighter: #d9e9ff;
-  --light: #ddeaff;
-  --predim: #cddfff;
-  --dim: #caddff;
-  --dim-dark: #bed3ff;
-  --dim-darker: #acc7ff;
-  --dim-darker-50: #9abfff;
-  --dim-darker-100: #7babfe;
-  --dim-darker-200: #5090ff;
+  /* INFO: Primary scale */
+  --dxrp-primary-25:  #f5f9ff;
+  --dxrp-primary-50:  #eef5ff;
+  --dxrp-primary-75:  #e6f0ff;
 
-  --link-normal: #7babfe;
-  --link-visited: #5f8ee0;
-  --link-hover: #6a9af0;
-  --link-active: #4c79c7;
+  --dxrp-primary-100: #ddeaff;
+  --dxrp-primary-150: #d3e5ff;
+  --dxrp-primary-200: #d9e9ff;
+
+  --dxrp-primary-250: #d2e3ff;
+  --dxrp-primary-300: #cddfff;
+  --dxrp-primary-350: #c6d9ff;
+
+  --dxrp-primary-400: #caddff;
+  --dxrp-primary-450: #c2d6ff;
+  --dxrp-primary-500: #bed3ff;
+
+  --dxrp-primary-550: #b4ccff;
+  --dxrp-primary-600: #acc7ff;
+
+  --dxrp-primary-650: #a3c2ff;
+  --dxrp-primary-700: #9abfff;
+
+  --dxrp-primary-750: #8fb6ff;
+  --dxrp-primary-800: #7babfe;
+
+  --dxrp-primary-850: #6aa0ff;
+  --dxrp-primary-900: #5090ff;
+
+  --dxrp-primary-950: #3f7be6;
+  --dxrp-primary-1000:#2f66cc;
+
+  /* INFO: Cyan for variation */
+  --dxrp-accent-cyan-100: #dff7fb;
+  --dxrp-accent-cyan-200: #c8eff6;
+  --dxrp-accent-cyan-300: #aee6ef;
+  --dxrp-accent-cyan-400: #8fdde8;
+  --dxrp-accent-cyan-500: #74cfdc;
+  --dxrp-accent-cyan-600: #5bbecb;
+
+  /* INFO: Text Color */
+  --dxrp-text-primary:   #23384e;
+  --dxrp-text-secondary: #4a6278;
+  --dxrp-text-tertiary:  #6b849b;
+  --dxrp-text-disabled:  #9bb0c3;
+  --dxrp-text-inverse:   #ffffff;
+
+  /* INFO: Link Color */
+  --dxrp-link-normal:  var(--dxrp-primary-800);
+  --dxrp-link-hover:   var(--dxrp-primary-850);
+  --dxrp-link-active:  var(--dxrp-primary-900);
+  --dxrp-link-visited: #5f8ee0;
+
+  /* INFO: Alpha Variants */
+  --dxrp-primary-a10: rgba(80, 144, 255, 0.10);
+  --dxrp-primary-a20: rgba(80, 144, 255, 0.20);
+  --dxrp-primary-a30: rgba(80, 144, 255, 0.30);
+  --dxrp-primary-a50: rgba(80, 144, 255, 0.50);
+
+  /* INFO: Borders */
+  --dxrp-border-subtle: var(--dxrp-primary-150);
+  --dxrp-border:        var(--dxrp-primary-300);
+  --dxrp-border-strong: var(--dxrp-primary-600);
 
   --clip-value: 25px;
   --pad-degree: calc(var(--clip-value) + 10px);
@@ -30,13 +84,13 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  color: var(--font);
+  color: var(--dxrp-text-primary);
   text-decoration: none;
 }
 
 body {
   margin: 0;
-  color: var(--font);
-  background-color: var(--background);
+  color: var(--dxrp-text-primary);
+  background-color: var(--dxrp-bg-200);
   font-family: "Google";
 }

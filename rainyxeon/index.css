@@ -1,6 +1,6 @@
 #home {
   min-height: 100vh;
-  /* background-color: var(--dim-dark); */
+  /* background-color: var(--dxrp-primary-500); */
 }
 
 slash-container {
@@ -31,7 +31,7 @@ slash-blade {
 .header {
   margin: 0;
   padding-top: calc(74px + 50px);
-  background-color: var(--lighter);
+  background-color: var(--dxrp-primary-200);
   text-align: center;
   padding-bottom: 40px;
   margin-bottom: 30px;
@@ -66,13 +66,13 @@ ptf-pfp {
 }
 
 ptf-s-main-info {
-  background-color: var(--lighter);
+  background-color: var(--dxrp-primary-200);
   display: flex;
   flex-direction: column;
 }
 
 ptf-s-info {
-  background-color: var(--lighter);
+  background-color: var(--dxrp-primary-200);
   padding-bottom: 15px;
   padding-top: 15px;
   padding-left: 10px;
@@ -87,7 +87,7 @@ ptf-s-name {
 
 ptf-content {
   flex: 3;
-  background-color: var(--lighter);
+  background-color: var(--dxrp-primary-200);
   margin: 15px;
   display: flex;
   flex-direction: column;
@@ -110,24 +110,24 @@ ptf-s-additional-data {
 }
 
 .ptf-s-link:link {
-  color: var(--link-normal);
+  color: var(--dxrp-link-normal);
 }
 
 .ptf-s-link:visited {
-  color: var(--link-visited);
+  color: var(--dxrp-link-visited);
 }
 
 .ptf-s-link:hover {
-  color: var(--link-hover);
+  color: var(--dxrp-link-hover);
   text-decoration: underline;
 }
 
 .ptf-s-link:active {
-  color: var(--link-active);
+  color: var(--dxrp-link-active);
 }
 
 code {
-  background-color: var(--dim-darker);
+  background-color: var(--dxrp-primary-600);
   padding: 2px;
   border-radius: 5px;
   font-weight: bold;
@@ -140,8 +140,8 @@ li {
 }
 
 @media (max-width: 1000px) {
-  slash-blade {
-    width: 40px;
+  slash-container {
+    scale: 3;
   }
   
   .header {

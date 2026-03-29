@@ -1,6 +1,6 @@
 /* INFO: Footer */
 footer {
-  background-color: var(--dim-darker);
+  background-color: var(--dxrp-primary-600);
   padding: 2em;
   font-size: 18px;
   display: flex;
@@ -16,7 +16,7 @@ social-media-list {
 
 @media (max-width: 1000px) {
   footer {
-    background-color: var(--dim-darker);
+    background-color: var(--dxrp-primary-600);
     padding: 2em;
     font-size: 18px;
     display: grid;

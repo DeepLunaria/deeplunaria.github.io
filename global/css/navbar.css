@@ -13,7 +13,7 @@ nav-constructor {
   padding-left: calc(var(--pad-degree) + 20px);
   padding-right: calc(var(--pad-degree) + 20px);
   cursor: pointer;
-  background-color: var(--dim);
+  background-color: var(--dxrp-primary-400);
   transition: background-color 0.3s ease-in-out;
   clip-path: polygon(var(--pad-degree) 0, 100% 0, calc(100% - var(--pad-degree)) 100%, 0 100%);
   margin-left: -40px;
@@ -24,19 +24,19 @@ nav-constructor {
   padding: var(--clip-value);
   padding-left: var(--pad-degree);
   padding-right: calc(var(--pad-degree) + 20px);
-  background-color: var(--dim-darker-100);
+  background-color: var(--dxrp-primary-800);
   font-weight: bold;
   transition: background-color 0.3s ease-in-out;
   clip-path: polygon(0 0, 100% 0, calc(100% - var(--pad-degree)) 100%, 0 100%);
 }
 
 .nav-item-first:hover {
-  background-color: var(--dim-darker-200);
+  background-color: var(--dxrp-primary-900);
 }
 
 .nav-item:hover {
   font-weight: bold;
-  background-color: var(--dim-darker);
+  background-color: var(--dxrp-primary-600);
 }
 
 /* INFO: Responsive Design Code */

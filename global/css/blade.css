@@ -20,70 +20,69 @@ slash-blade {
 /* INFO: Main Blade */
 .sb-color-orange {
   background-color: var(--pastel-orange-blade);
-  animation: move-a 8.1s ease-in-out infinite;
+  animation: move-a 11.6s ease-in-out infinite;
 }
 
 .sb-color-purple {
   background-color: var(--pastel-purple-blade);
-  animation: move-b 7.2s ease-in-out infinite;
+  animation: move-b 10.5s ease-in-out infinite;
 }
 
 .sb-color-green {
   background-color: var(--pastel-green-blade);
-  animation: move-c 9.3s ease-in-out infinite;
+  animation: move-c 13.2s ease-in-out infinite;
 }
 
 .sb-color-red {
   background-color: var(--pastel-red-blade);
-  animation: move-d 6.4s ease-in-out infinite;
+  animation: move-d 9.7s ease-in-out infinite;
 }
 
 .sb-color-yellow {
   background-color: var(--pastel-yellow-blade);
-  animation: move-e 8.5s ease-in-out infinite;
+  animation: move-e 12.1s ease-in-out infinite;
 }
 
 .sb-color-blue {
   background-color: var(--pastel-blue-blade);
-  animation: move-f 10.6s ease-in-out infinite;
+  animation: move-f 14.8s ease-in-out infinite;
 }
 
 /* INFO: Extra Blade */
 .ex-sb-color-orange {
   background-color: var(--pastel-orange-blade);
-  animation: move-b 7.6s ease-in-out infinite reverse;
+  animation: move-b 11.2s ease-in-out infinite reverse;
 }
 
 .ex-sb-color-purple {
   background-color: var(--pastel-purple-blade);
-  animation: move-c 8.5s ease-in-out infinite reverse;
+  animation: move-c 12.3s ease-in-out infinite reverse;
 }
 
 .ex-sb-color-green {
   background-color: var(--pastel-green-blade);
-  animation: move-d 6.8s ease-in-out infinite reverse;
+  animation: move-d 10.2s ease-in-out infinite reverse;
 }
 
 .ex-ex-sb-color-red {
   background-color: var(--pastel-red-blade);
-  animation: move-e 7.3s ease-in-out infinite reverse;
+  animation: move-e 10.9s ease-in-out infinite reverse;
 }
 
 .ex-sb-color-yellow {
   background-color: var(--pastel-yellow-blade);
-  animation: move-f 8.2s ease-in-out infinite reverse;
+  animation: move-f 12.0s ease-in-out infinite reverse;
 }
 
 .ex-sb-color-blue {
   background-color: var(--pastel-blue-blade);
-  animation: move-a 9.1s ease-in-out infinite reverse;
+  animation: move-a 13.4s ease-in-out infinite reverse;
 }
 
 /* INFO: First Blade */
 .sb-first {
-  animation: move-a 8.1s ease-in-out infinite;
+  animation: move-a 11.6s ease-in-out infinite;
 }
-
 /* INFO: Keyframes */
 @keyframes move-a {
   0%   { transform: translateX(0%); }

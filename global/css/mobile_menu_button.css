@@ -3,7 +3,7 @@ mobile-navbar {
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--dim-darker-50);
+  background-color: var(--dxrp-primary-700);
   z-index: 40;
   display: flex;
   align-items: center;
@@ -18,14 +18,14 @@ mobile-navbar {
   padding-left: calc(var(--pad-degree) + 20px);
   padding-right: calc(var(--pad-degree) + 20px);
   cursor: pointer;
-  background-color: var(--dim-darker);
+  background-color: var(--dxrp-primary-600);
   transition: background-color 0.3s ease-in-out;
   clip-path: polygon(var(--pad-degree) 0, 100% 0, 100% 100%, 0 100%);
   margin-left: -40px;
 }
 
 #mobile-menu-button:active {
-  background-color: var(--dim-darker-100);
+  background-color: var(--dxrp-primary-800);
 }
 
 #mobile-menu-screen {
@@ -37,7 +37,7 @@ mobile-navbar {
   right: -17px;
   bottom: 0;
   z-index: -100;
-  background-color: var(--dim);
+  background-color: var(--dxrp-primary-400);
   transition: opacity 0.5s ease-in-out;
   display: grid;
   align-content: start;
@@ -62,7 +62,7 @@ mobile-navbar {
   padding-bottom: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: var(--dim-darker-50);
+  background-color: var(--dxrp-primary-700);
   clip-path: polygon(var(--pad-degree) 0, 100% 0, calc(100% - var(--pad-degree)) 100%, 0 100%);
 }
 

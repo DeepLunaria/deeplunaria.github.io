@@ -6,7 +6,7 @@
 .header {
   margin: 0;
   padding-top: calc(74px + 50px);
-  background-color: var(--light);
+  background-color: var(--dxrp-primary-100);
   text-align: center;
   padding-left: 20vw;
   padding-right: 20vw;
@@ -25,7 +25,7 @@
 
 .pj-card {
   display: flex;
-  background-color: var(--dim);
+  background-color: var(--dxrp-primary-400);
   margin-top: 25px;
   margin-bottom: 25px;
   clip-path: polygon(var(--pad-degree) 0, 100% 0, calc(100% - var(--pad-degree)) 100%, 0 100%);
@@ -41,7 +41,7 @@ pj-card-blade {
   padding: 30px;
   padding-left: 50px;
   padding-right: 50px;
-  background-color: var(--dim-darker);
+  background-color: var(--dxrp-primary-600);
   clip-path: polygon(var(--pad-degree) 0, 100% 0, calc(100% - var(--pad-degree)) 100%, 0 100%);
 }
 
