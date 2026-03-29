@@ -1,6 +1,9 @@
+:root {
+  --au-card-pad-deg: calc(var(--pad-degree));
+}
+
 #home {
   min-height: 100vh;
-  /* background-color: var(--dxrp-primary-500); */
 }
 
 slash-container {
@@ -39,93 +42,6 @@ slash-blade {
   font-weight: bold;
 }
 
-portfolio {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  margin-top: 50px;
-  word-wrap: break-word;
-}
-
-ptf-s {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  margin: 15px;
-}
-
-ptf-pfp {
-  display: block;
-  background-image: url(/assets/deeplunaria/rainyxeon/pfp.png);
-  aspect-ratio: 1 / 1;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 320px;
-  width: 320px;
-}
-
-ptf-s-main-info {
-  background-color: var(--dxrp-primary-200);
-  display: flex;
-  flex-direction: column;
-}
-
-ptf-s-info {
-  background-color: var(--dxrp-primary-200);
-  padding-bottom: 15px;
-  padding-top: 15px;
-  padding-left: 10px;
-  display: flex;
-  flex-direction: column;
-}
-
-ptf-s-name {
-  font-weight: bold;
-  font-size: 25px;
-}
-
-ptf-content {
-  flex: 3;
-  background-color: var(--dxrp-primary-200);
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 50px;
-  padding: 15px;
-}
-
-ptf-s-text {
-  font-size: 16px;
-}
-
-ptf-s-additional-data {
-  display: flex;
-  flex-direction: column;
-}
-
-.ptf-s-additional-data-main-info {
-  padding-top: 15px;
-  padding-left: 10px;
-}
-
-.ptf-s-link:link {
-  color: var(--dxrp-link-normal);
-}
-
-.ptf-s-link:visited {
-  color: var(--dxrp-link-visited);
-}
-
-.ptf-s-link:hover {
-  color: var(--dxrp-link-hover);
-  text-decoration: underline;
-}
-
-.ptf-s-link:active {
-  color: var(--dxrp-link-active);
-}
-
 code {
   background-color: var(--dxrp-primary-600);
   padding: 2px;
@@ -139,7 +55,180 @@ li {
   margin-bottom: 10px;
 }
 
-@media (max-width: 1000px) {
+h1 {
+  background-color: var(--dxrp-primary-300);
+  padding: 15px;
+  padding-right: 50px;
+  margin: 0;
+  width: fit-content;
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--au-card-pad-deg)) 100%, 0 100%);
+}
+
+h2 {
+  background-color: var(--dxrp-primary-300);
+  padding: 15px;
+  padding-right: 50px;
+  margin: 0;
+  width: fit-content;
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--au-card-pad-deg)) 100%, 0 100%);
+}
+
+.header-box {
+  background-color: var(--dxrp-primary-75);
+  padding: 15px;
+  padding-right: 50px;
+  width: 4em;
+  display: block;
+  clip-path: polygon(var(--au-card-pad-deg) 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.time-data-section {
+  background-color: var(--dxrp-primary-600);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+#online_data {
+  --au-card-pad-deg: 20px;
+  background-color: var(--dxrp-primary-700);
+  padding: 15px;
+  padding-right: 50px;
+  margin: 0;
+  width: fit-content;
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--au-card-pad-deg)) 100%, 0 100%);
+}
+
+#exp_data {
+  --au-card-pad-deg: 20px;
+  background-color: var(--dxrp-primary-700);
+  padding: 15px;
+  padding-left: 50px;
+  margin: 0;
+  width: fit-content;
+  clip-path: polygon(var(--au-card-pad-deg) 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.tech-stack-section ptf-content-header {
+  display: flex;
+  background-color: var(--dxrp-primary-500);
+}
+
+.tech-stack-section h3 {
+  text-align: end;
+  padding: 15px;
+  padding-left: 50px;
+  background-color: var(--dxrp-primary-550);
+  clip-path: polygon(var(--au-card-pad-deg) 0, 100% 0, 100% 100%, 0 100%);
+  margin: 0;
+  justify-content: center;
+}
+
+.tech-stack-section .header-left {
+  text-align: end;
+  padding: 15px;
+  padding-right: 50px;
+  padding-left: 15px;
+  background-color: var(--dxrp-primary-550);
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--au-card-pad-deg)) 100%, 0 100%);
+  margin: 0;
+  justify-content: center;
+}
+
+.tech-stack-section ul {
+  background-color: var(--dxrp-primary-650);
+  margin: 0;
+  padding: 10px;
+}
+
+.tech-stack-section li {
+  margin: 10px;
+  margin-left: 20px;
+}
+
+.tech-stack-section code {
+  background-color: var(--dxrp-primary-800);
+}
+
+.what-i-know-section {
+  background-color: var(--dxrp-primary-500);
+  padding-top: 15px;
+}
+
+.what-i-know-section table {
+  background-color: var(--dxrp-primary-650);
+  margin-top: 15px;
+  overflow: scroll;
+  border: 0;
+  border-collapse: collapse; /* Removes all spacing between cells */
+}
+
+.what-i-know-section td {
+  padding: 15px;
+  word-wrap: break-word;
+}
+
+.what-i-know-section .td-right {
+  background-color: var(--dxrp-primary-650);
+}
+
+.what-i-know-section .td-left {
+  background-color: var(--dxrp-primary-600);
+  clip-path: polygon(0 0, 100% 0, calc(100% - var(--au-card-pad-deg)) 100%, 0 100%);
+}
+
+.what-i-know-section text {
+  margin: 15px;
+}
+
+.normal-section {
+  background-color: var(--dxrp-primary-450);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+  word-wrap: break-word;
+}
+
+@media (max-width: 1100px) {
+  .normal-section {
+    grid-template-columns: 1fr;
+  }
+
+  .time-data-section {
+    flex-direction: column;
+    align-items:normal;
+  }
+
+  #online_data {
+    background-color: var(--dxrp-primary-600);
+    clip-path: initial;
+    padding-right: 15px;
+    padding-bottom: 0;
+  }
+
+  #exp_data {
+    background-color: var(--dxrp-primary-600);
+    clip-path: initial;
+    padding-left: 15px;
+    padding-top: 0;
+  }
+
+  .time-data-section {
+    flex-direction: column;
+    align-items:normal;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
   slash-container {
     scale: 3;
   }
@@ -148,44 +237,16 @@ li {
     padding-left: 20px;
     padding-right: 20px;
   }
-  portfolio {
+}
+
+@media (max-width: 1000px) {
+  .what-i-know-section tr {
+    display: flex;
     flex-direction: column;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  ptf-s-info {
-    padding: 10px;
-  }
-  ptf-s-main-info {
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 30px;
-    padding: 10px;
-  }
-  ptf-pfp {
-    flex: 1;
-    height: 100%;
-    width: 100%;
-    min-width: 100px;
-    min-height: 100px;
-  }
-  .ptf-s-additional-data-main-info {
-    flex: 4;
-    padding: 0;
-    padding-left: 10px;
   }
 
-  ptf-s-name {
+  .what-i-know-section .td-left {
     font-weight: bold;
-    font-size: 25px;
-  }
-
-  ptf-s-text {
-    font-size: 15px;
-  }
-
-  portfolio {
-    margin-left: 10px;
-    margin-right: 10px;
+    font-size: 18px;
   }
 }
