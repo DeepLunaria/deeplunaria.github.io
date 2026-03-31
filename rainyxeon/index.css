@@ -228,10 +228,6 @@ h2 {
   h2 {
     font-size: 20px;
   }
-
-  slash-container {
-    scale: 3;
-  }
   
   .header {
     padding-left: 20px;
@@ -248,5 +244,12 @@ h2 {
   .what-i-know-section .td-left {
     font-weight: bold;
     font-size: 18px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  slash-container {
+    scale: 3.5;
   }
 }
