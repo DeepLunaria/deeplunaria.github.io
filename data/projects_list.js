@@ -9,13 +9,13 @@ export const projects_list = [
     name: "LunaticSea",
     description: "ByteBlaze now in Lua / Luvit.",
     color: "--pastel-orange-blade",
-    link: "https://github.com/XDL-LunaticSea"
+    link: "https://github.com/DXRN-LunaticSea"
   },
   {
     name: "MoonWake",
     description: "Redmi Note 12 Pro 5G powersave, stable kernel and stuff.",
     color: "--pastel-purple-blade",
-    link: "https://github.com/XDL-MoonWake"
+    link: "https://github.com/DXRN-MoonWake"
   },
   {
     name: "Rainlink",
@@ -33,6 +33,6 @@ export const projects_list = [
     name: "LunaStream",
     description: "[HIATUS, BRB] A lavalink alternative focus on stability, decent speed and modulize like FrequenC.",
     color: "--pastel-yellow-blade",
-    link: "https://github.com/XDL-LunaStream"
+    link: "https://github.com/DXRN-LunaStream"
   },
 ]
