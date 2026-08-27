@@ -20,8 +20,8 @@ ptf-pfp {
   aspect-ratio: 1 / 1;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 320px;
-  width: 320px;
+  min-height: 320px;
+  min-width: 320px;
 }
 
 ptf-s-main-info {
