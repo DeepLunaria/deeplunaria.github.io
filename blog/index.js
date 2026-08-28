@@ -13,11 +13,23 @@ import { post_list } from "../data/blog_post_list.js";
     threshold: 0.2
   });
 
+  
+
+  const post_pages_metadata = []
+
   for (let index = 0; index < post_list.length; index++) {
     const post_page = await (await fetch(`${post_list[index]}/index.html`)).text();
     const post_metadata_regex = /<script[^>]*type=["']application\/json["'][^>]*id=["']post-metadata["'][^>]*>\s*([\s\S]*?)\s*<\/script>/i;
     const post_metadata_raw = post_metadata_regex.exec(post_page);
     const post_metadata = JSON.parse(post_metadata_raw[1])
+    post_pages_metadata.push(post_metadata)
+    post_metadata.id = post_list[index]
+  }
+
+  post_pages_metadata.sort((a, b) => b.created_at - a.created_at)
+
+  for (let index = 0; index < post_pages_metadata.length; index++) {
+    const post_metadata = post_pages_metadata[index]
 
     const blade_card = document.createElement('post-card-blade')
     blade_card.setAttribute('style', `background-color: var(${post_metadata.color});`)
@@ -44,7 +56,7 @@ import { post_list } from "../data/blog_post_list.js";
 
     const main_card = document.createElement("a")
     main_card.classList.add("post-card")
-    main_card.setAttribute('href', post_list[index])
+    main_card.setAttribute('href', post_metadata.id)
     main_card.appendChild(blade_card)
     main_card.appendChild(content_card)
 
