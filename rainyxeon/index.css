@@ -248,8 +248,14 @@ h2 {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   slash-container {
     scale: 3.5;
+  }
+}
+
+@media (min-width: 1600px) {
+  slash-container {
+    scale: 2.5;
   }
 }

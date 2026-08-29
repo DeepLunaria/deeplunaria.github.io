@@ -270,3 +270,9 @@ pj-see-more-button-container {
     padding-right: 5px;
   }
 }
+
+@media (min-width: 1600px) {
+  slash-container {
+    scale: 1.2;
+  }
+}
